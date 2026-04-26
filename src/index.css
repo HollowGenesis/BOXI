@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* === DARK THEME === */
+
+/* Фоны */
+.dark-app .bg-white          { background-color: #27272a !important; }
+.dark-app .bg-slate-50       { background-color: #1c1c1f !important; }
+.dark-app .bg-slate-100      { background-color: #18181b !important; }
+.dark-app .bg-slate-200      { background-color: #3f3f46 !important; }
+
+/* Текст */
+.dark-app .text-slate-950    { color: #fafafa !important; }
+.dark-app .text-slate-900    { color: #f4f4f5 !important; }
+.dark-app .text-slate-700    { color: #d4d4d8 !important; }
+.dark-app .text-slate-600    { color: #a1a1aa !important; }
+.dark-app .text-slate-500    { color: #71717a !important; }
+.dark-app .text-slate-400    { color: #71717a !important; }
+
+/* Рамки и границы */
+.dark-app .border-slate-200  { border-color: #3f3f46 !important; }
+.dark-app .border-slate-100  { border-color: #27272a !important; }
+.dark-app [class*="ring-slate-200"] { --tw-ring-color: rgba(63,63,70,0.6) !important; }
+
+/* Поля ввода, выбор, текстовые области */
+.dark-app input:not([type="color"]):not([type="checkbox"]),
+.dark-app select,
+.dark-app textarea {
+  background-color: #1c1c1f !important;
+  color: #fafafa !important;
+  border-color: #3f3f46 !important;
+}
+.dark-app input::placeholder,
+.dark-app textarea::placeholder  { color: #52525b !important; }
+.dark-app input:disabled,
+.dark-app select:disabled,
+.dark-app textarea:disabled       { color: #52525b !important; }
+
+/* Именованные утилиты для отдельных компонентов */
+.dark-app .bg-amber-50         { background-color: #1c1007 !important; }
+.dark-app .text-amber-700      { color: #fbbf24 !important; }
+.dark-app .bg-rose-50          { background-color: #1f0a0a !important; }
+.dark-app .text-rose-600       { color: #f87171 !important; }
+.dark-app .text-rose-700       { color: #fca5a5 !important; }
+.dark-app .bg-emerald-50       { background-color: #d1fae5 !important; }
+.dark-app .ring-emerald-100    { --tw-ring-color: rgba(16,185,129,0.25) !important; }
+.dark-app .bg-emerald-50 .text-slate-950,
+.dark-app .bg-emerald-50 .text-slate-900 { color: #064e3b !important; }
+.dark-app .bg-emerald-50 .text-slate-700,
+.dark-app .bg-emerald-50 .text-slate-600,
+.dark-app .bg-emerald-50 .text-slate-500,
+.dark-app .bg-emerald-50 .text-slate-400 { color: #065f46 !important; }
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #09090b;
+}
